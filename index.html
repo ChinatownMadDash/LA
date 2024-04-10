@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Landing Page</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .jumbotron {
+      text-align: center;
+      padding: 80px 20px;
+      background-size: cover;
+      background-position: center;
+    }
+    .jumbotron.mobile-bg {
+      background-image: url('https://images.unsplash.com/photo-1544413660-299165566b1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Mobile background image URL */
+      height: 100vh; /* Set the height to 100% of the viewport height */
+    }
+    .jumbotron.desktop-bg {
+      background-image: url('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Desktop background image URL */
+      height: 100vh; /* Set the height to 100% of the viewport height */
+    }
+    .jumbotron-content {
+      color: #fff; /* Text color for better readability on images */
+    }
+    .btn-group {
+      margin-top: 20px;
+    }
+
+    /* Media queries for responsiveness */
+    @media (min-width: 576px) {
+      .jumbotron.mobile-bg {
+        display: none; /* Hide mobile background image on screens wider than 576px */
+      }
+    }
+    @media (max-width: 575.98px) {
+      .jumbotron.desktop-bg {
+        display: none; /* Hide desktop background image on screens narrower than 576px */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile Background -->
+  <div class="jumbotron jumbotron-fluid mobile-bg ">
+    <div class="container jumbotron-content">
+      <h1 class="display-4">$LA Is Better</h1>
+      <p class="lead">First Ever Memecoin of the City of Angels</p>
+      <div class="btn-group">
+        <a href="#" class="btn btn-primary btn-lg">Chart</a>
+        <a href="#" class="btn btn-secondary btn-lg">Twitter</a>
+        <a href="#" class="btn btn-success btn-lg">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Background -->
+  <div class="jumbotron jumbotron-fluid desktop-bg">
+    <div class="container jumbotron-content">
+      <h1 class="display-4">$LA is Better</h1>
+      <p class="lead">First Ever Memecoin of the City of Angels</p>
+      <div class="btn-group">
+        <a href="#" class="btn btn-primary btn-lg">Chart</a>
+        <a href="#" class="btn btn-secondary btn-lg">Twitter</a>
+        <a href="#" class="btn btn-success btn-lg">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
